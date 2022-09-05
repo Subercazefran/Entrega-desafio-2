@@ -48,45 +48,51 @@
             </nav>
         </section>
     </header>
-    <main>
-        <form action="" method="post">
-            <fieldset>
-            <legend>Contactanos</legend>
-            <div>
-                <label for="nombre">Escriba su nombre completo</label>
-                <input type="text" placeholder="Fernando Moyano" id="nombre">
+    <main id="main__contacto">
+        <form class="was-validated">
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Describa su problema o razon de contacto.</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Por favor ingrese aqui el texto." required></textarea>
+              <div class="invalid-feedback">
+                Por favor ingrese aqui el texto
+              </div>
             </div>
-            <div>
-                <label for="Mail">Escriba su mail</label>
-                <input type="text" placeholder="Coder@gmail.com" id="Mail">
+          
+            <div class="form-check mb-3">
+              <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+              <label class="form-check-label" for="validationFormCheck1">¿Acaso es un robot?</label>
+              <div class="invalid-feedback">Por favor demuestre que no es un robot.</div>
             </div>
-            <div>
-                <select name="Estado civil" id="Civil">
-                    <option value="soltero" >Soltero/a</option>
-                    <option value="Casado" >Casado/a</option>
-                    <option value="viudo" >Viudo/a</option>
-                </select>
+          
+            <div class="form-check">
+              <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck2">Se comunica por contacto</label>
             </div>
-            <div>
-                <label for="Check">¿Desea recibir nuevos productos?</label>
-                <input type="checkbox" name="Check" id="">
+            <div class="form-check mb-3">
+              <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+              <label class="form-check-label" for="validationFormCheck3">Se comunica por reclamo</label>
+              <div class="invalid-feedback">Seleccione una opcion por favor.</div>
             </div>
-            <div>
-                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Ingrese un comentario extra"></textarea>
+          
+            <div class="mb-3">
+              <select class="form-select" required aria-label="select example">
+                <option value="">Razones</option>
+                <option value="1">Franquicia</option>
+                <option value="2">Reclamo</option>
+                <option value="3">Otro</option>
+              </select>
+              <div class="invalid-feedback">Debe seleccionar una opcion.</div>
             </div>
-            <div>
-                <input type="reset" value="Resetear formulario">
-                <input type="submit" value="Enviar formulario" />
+          
+            <div class="mb-3">
+              <button class="btn btn-primary" type="submit" disabled>Hecho</button>
             </div>
-            </fieldset>
-        </form> 
+          </form>
     </main>
     <footer>
-        <hr>
             <p class="foot">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus magnam sequi neque totam culpa praesentium maiores minima obcaecati iste nihil quos architecto, accusantium, veniam officia quidem aliquam! Voluptatibus, nihil amet?
             </p>
-        <hr>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
